@@ -103,10 +103,10 @@ function reinstantiateTiles() {
 	// Note the DRACO compression files need to be supplied via an explicit source.
 	// We use unpkg here but in practice should be provided by the application.
 	const dracoLoader = new DRACOLoader();
-	dracoLoader.setDecoderPath( '/public/draco/' );
+	dracoLoader.setDecoderPath( '/3DTilesRendererJS/public/draco/' );
 
 	const ktx2loader = new KTX2Loader();
-	ktx2loader.setTranscoderPath( '/public/basis/' );
+	ktx2loader.setTranscoderPath( '/3DTilesRendererJS/public/basis/' );
 	ktx2loader.detectSupport( renderer );
 
 	const loader = new GLTFLoader( tiles.manager );
